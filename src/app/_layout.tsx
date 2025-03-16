@@ -1,11 +1,23 @@
-import { StatusBar, Text, View } from 'react-native'
+import { Stack } from 'expo-router'
+import { StatusBar } from 'react-native'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 import '../../global.css'
 
-export default function App() {
+const App = () => {
 	return (
-		<View className="flex-1 items-center justify-center">
-			<StatusBar barStyle={'dark-content'} backgroundColor={'#ffffff'} />
-			<Text className="text-2xl font-semibold text-blue-900">VibeX</Text>
-		</View>
+		<SafeAreaProvider>
+			<RootNavigation />
+			<StatusBar barStyle={'light-content'} backgroundColor={'#000'} />
+		</SafeAreaProvider>
 	)
 }
+
+const RootNavigation = () => {
+	return (
+		<Stack screenOptions={{ headerShown: false }}>
+			<Stack.Screen name="(tabs)" />
+		</Stack>
+	)
+}
+
+export default App
