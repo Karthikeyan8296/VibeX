@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "VibeX",
 		"slug": "VibeX",
-		"scheme": "VibeX",
+		"scheme": "vibex",
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",

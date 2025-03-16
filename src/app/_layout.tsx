@@ -5,7 +5,7 @@ export default function App() {
 	return (
 		<View className="flex-1 items-center justify-center">
 			<StatusBar barStyle={'dark-content'} backgroundColor={'#ffffff'} />
-			<Text className="text-xl font-semibold">VibeX</Text>
+			<Text className="text-2xl font-semibold text-blue-900">VibeX</Text>
 		</View>
 	)
 }
