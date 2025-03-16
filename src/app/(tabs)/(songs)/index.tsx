@@ -1,11 +1,13 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { SafeAreaView, ScrollView, Text } from 'react-native'
 
 const SongsScreen = () => {
 	return (
-		<View className="flex-1 bg-background">
-			<Text className="text-text text-base">Songs Screen</Text>
-		</View>
+		<SafeAreaView className="flex-1 bg-background">
+			<ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+				<Text className="text-white text-base">Songs Screen</Text>
+			</ScrollView>
+		</SafeAreaView>
 	)
 }
 

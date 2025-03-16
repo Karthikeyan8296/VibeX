@@ -1,10 +1,15 @@
+import { StackScreenWithSearchBar } from '@/constants/layout'
 import { Stack } from 'expo-router'
+
 import React from 'react'
 
 const PlaylistNavigation = () => {
 	return (
 		<Stack>
-			<Stack.Screen name="index" options={{ headerTitle: 'Playlists' }} />
+			<Stack.Screen
+				name="index"
+				options={{ ...StackScreenWithSearchBar, headerTitle: 'Playlists' }}
+			/>
 		</Stack>
 	)
 }
