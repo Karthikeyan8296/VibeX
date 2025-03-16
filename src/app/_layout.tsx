@@ -1,20 +1,11 @@
-// import { StatusBar } from "expo-status-bar";
-import { StatusBar, StyleSheet, Text, View } from 'react-native'
+import { StatusBar, Text, View } from 'react-native'
+import '../../global.css'
 
 export default function App() {
 	return (
-		<View style={styles.container}>
-			<Text>VibeX</Text>
+		<View className="flex-1 items-center justify-center">
 			<StatusBar barStyle={'dark-content'} backgroundColor={'#ffffff'} />
+			<Text className="text-xl font-semibold">VibeX</Text>
 		</View>
 	)
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: '#fff',
-		alignItems: 'center',
-		justifyContent: 'center',
-	},
-})
