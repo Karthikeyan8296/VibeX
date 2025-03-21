@@ -1,14 +1,15 @@
 import TracksList from '@/components/TracksList'
 import React from 'react'
-import { ScrollView, View } from 'react-native'
+import { SafeAreaView, ScrollView, Text } from 'react-native'
 
 const SongsScreen = () => {
 	return (
-		<View className="flex-1 bg-background">
+		<SafeAreaView className="flex-1 bg-background px-4">
+			<Text className="text-white text-4xl font-semibold pb-4 pt-8">Songs</Text>
 			<ScrollView>
 				<TracksList scrollEnabled={false} />
 			</ScrollView>
-		</View>
+		</SafeAreaView>
 	)
 }
 

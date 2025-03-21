@@ -4,7 +4,9 @@ import { Text, View } from 'react-native'
 const ArtistsScreen = () => {
 	return (
 		<View className="flex-1 bg-background">
-			<Text className="text-text text-base">Artists Screen</Text>
+			<View className="flex-1 items-center justify-center pt-14">
+				<Text className="text-text text-base">Artist Screen</Text>
+			</View>
 		</View>
 	)
 }
