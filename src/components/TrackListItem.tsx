@@ -2,6 +2,7 @@ import { unknownTrackImageUri } from '@/constants/images'
 import React from 'react'
 import { Image, Text, TouchableHighlight, View } from 'react-native'
 
+//To send the props, we need to first initial it
 export type TrackListItemProps = {
 	track: { title: string; artist?: string; image?: string }
 }
@@ -11,7 +12,7 @@ const TrackListItem = ({ track }: TrackListItemProps) => {
 
 	return (
 		<TouchableHighlight>
-			<View className="flex flex-row pb-4">
+			<View className="flex flex-row">
 				<View className="pr-3">
 					<Image
 						source={{
