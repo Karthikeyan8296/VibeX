@@ -1,1 +1,1 @@
-VibeX
+VibeX - music player app
